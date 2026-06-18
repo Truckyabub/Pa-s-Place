@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(123, 212, 180, 0.12), transparent 24%),
+    linear-gradient(180deg, #05090b 0%, #0a1113 100%);
+  color: #e8f1ee;
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+}

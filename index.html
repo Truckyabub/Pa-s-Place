@@ -3,481 +3,650 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A family tribute website honouring George Alexander Carey, Pa George, and the community legacy of pool, family, and the annual 9-ball tournament.">
-  <meta name="theme-color" content="#15372d">
-  <meta property="og:title" content="Pa’s Place | Honouring George Alexander Carey">
-  <meta property="og:description" content="A family tribute website honouring George Alexander Carey, Pa George, and the community legacy of pool, family, and the annual 9-ball tournament.">
+  <meta name="description" content="Steady Voice AI Studio is a local-first music creation workspace for legal, rights-aware, mock-generation-first songwriting, vocal continuity, and export planning.">
+  <meta name="theme-color" content="#0a1211">
+  <meta property="og:title" content="Steady Voice AI Studio">
+  <meta property="og:description" content="A local-first music creation workspace for legal, rights-aware songwriting and export planning.">
   <meta property="og:type" content="website">
-  <title>Pa’s Place | Honouring George Alexander Carey</title>
-  <!-- Favicon can be added here later if the family supplies one. -->
+  <title>Steady Voice AI Studio</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="assets/css/print.css" media="print">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#dashboard">Skip to studio</a>
 
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="#home" aria-label="Pa’s Place home">
-        <span class="brand-mark" aria-hidden="true">PP</span>
-        <span class="brand-text">
-          <strong>Pa’s Place</strong>
-          <span>Family. Pool. Community. Legacy.</span>
-        </span>
-      </a>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <div class="brand-mark" aria-hidden="true">SV</div>
+        <div>
+          <p class="brand-kicker">Local-first music lab</p>
+          <h1>Steady Voice AI Studio</h1>
+        </div>
+      </div>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
-        <span aria-hidden="true">Menu</span>
-      </button>
+      <div class="mode-chip" id="mode-chip">Personal Development Mode</div>
 
-      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
-        <a href="#home">Home</a>
-        <a href="#about">About Pa George</a>
-        <a href="#legacy">Tournament Legacy</a>
-        <a href="#event">Event Info</a>
-        <a href="#sponsors">Sponsors</a>
-        <a href="#memory">Memory Wall</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+      <nav class="studio-nav" aria-label="Studio navigation">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#artist-vault">Artist Vault</a>
+        <a href="#voice-builder">Voice Profile Builder</a>
+        <a href="#vocal-lab">Vocal Consistency Lab</a>
+        <a href="#lyric-studio">Lyric Studio</a>
+        <a href="#style-studio">Style Prompt Studio</a>
+        <a href="#song-builder">Song Builder</a>
+        <a href="#arrangement">Arrangement Timeline</a>
+        <a href="#stem-mixer">Stem Mixer</a>
+        <a href="#queue">Generation Queue</a>
+        <a href="#rights-ledger">Rights Ledger</a>
+        <a href="#album-builder">Album Builder</a>
+        <a href="#cover-art">Cover Art Prompt Studio</a>
+        <a href="#export">Export & Release Checklist</a>
+        <a href="#settings">Settings</a>
+        <a href="#legal">Legal Compliance Center</a>
+        <a href="#datasets">Dataset / License Manager</a>
+        <a href="#development">Personal Development Mode</a>
+        <a href="#debug">Admin Debug Console</a>
       </nav>
-    </div>
-  </header>
 
-  <main id="main">
-    <section class="hero section reveal" id="home" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">Family-built tribute</p>
-        <h1 id="hero-title">Pa’s Place</h1>
-        <p class="hero-subtitle">Honouring George Alexander Carey, lovingly known as Pa George, with a warm home for family stories, pool memories, sponsor recognition, and the Pa George 9-Ball Tournament legacy.</p>
-        <p class="hero-tagline">Family. Pool. Community. Legacy.</p>
-        <p class="hero-intro">“Pa’s Place is a family-built tribute to George Alexander Carey, lovingly known as Pa George — a place to honour his life, his love of pool, his family, and the community spirit carried forward in his name.”</p>
+      <div class="sidebar-note">
+        <strong>Guardrail</strong>
+        <p>No scraped content, no unauthorized voice cloning, and no real-artist imitation.</p>
+      </div>
+    </aside>
 
-        <div class="hero-actions">
-          <a class="button button-primary" href="#about">Learn His Story</a>
-          <a class="button button-secondary" href="#legacy">Tournament Legacy</a>
-          <a class="button button-secondary" href="#sponsors">Sponsor or Support</a>
-          <a class="button button-secondary" href="#gallery">View Gallery</a>
+    <div class="workspace">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Rights-aware music production workspace</p>
+          <h2>Build original songs, keep steady vocals, and track rights from first draft to release pack.</h2>
+          <p class="lede">This MVP runs locally, stores state in the browser, uses mock generation by default, and prepares a commercial-readiness trail without promising illegal shortcuts.</p>
         </div>
 
-        <p class="verification-note">Information marked as needing verification should be confirmed by family before publishing.</p>
-      </div>
-
-      <aside class="hero-visual" aria-hidden="true">
-        <div class="felt-panel">
-          <div class="felt-glow"></div>
-          <div class="felt-table">
-            <div class="table-rail table-rail-top"></div>
-            <div class="table-rail table-rail-bottom"></div>
-            <div class="table-rail table-rail-left"></div>
-            <div class="table-rail table-rail-right"></div>
-            <div class="rack"></div>
-            <div class="cue"></div>
-            <div class="nine-ball">9</div>
-            <div class="table-light"></div>
-          </div>
-          <div class="hero-card">
-            <span class="badge">Legacy archive</span>
-            <p>Build the family story carefully, one verified detail at a time.</p>
-          </div>
+        <div class="topbar-actions">
+          <button class="button button-primary" type="button" data-action="seed-demo">Seed demo data</button>
+          <button class="button button-secondary" type="button" data-action="export-package">Export release pack</button>
+          <button class="button button-secondary" type="button" data-action="copy-system-summary">Copy system summary</button>
         </div>
-      </aside>
-    </section>
+      </header>
 
-    <section class="section reveal" id="about" aria-labelledby="about-title">
-      <div class="section-heading">
-        <p class="eyebrow">About Pa George</p>
-        <h2 id="about-title">A tribute that keeps family memories in the right hands</h2>
-      </div>
-
-      <div class="panel panel-intro">
-        <p>“George Alexander Carey, known to many as Pa George, left behind more than memories. He left behind lessons, laughter, family stories, and a love for the game of pool that brought people together. Pa’s Place exists to keep that spirit alive for family, friends, players, and the community.”</p>
-      </div>
-
-      <div class="feature-grid feature-grid--5">
-        <article class="info-card reveal">
-          <h3>Life Dates</h3>
-          <!-- EDIT: Add verified life dates here only after family confirmation -->
-          <p>[Add verified life dates if family chooses]</p>
-        </article>
-        <article class="info-card reveal">
-          <h3>Family Story</h3>
-          <!-- EDIT: Add approved family story here only after family review -->
-          <p>[Add approved family story]</p>
-        </article>
-        <article class="info-card reveal">
-          <h3>Favourite Sayings</h3>
-          <!-- EDIT: Add family-approved sayings here only after family review -->
-          <p>[Add family-approved sayings]</p>
-        </article>
-        <article class="info-card reveal">
-          <h3>Pool Memories</h3>
-          <!-- EDIT: Add verified pool memories here only after family confirmation -->
-          <p>[Add verified memories]</p>
-        </article>
-        <article class="info-card reveal">
-          <h3>Community Memories</h3>
-          <!-- EDIT: Add verified community memories here only after family confirmation -->
-          <p>[Add verified memories]</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section reveal" id="legacy" aria-labelledby="legacy-title">
-      <div class="section-heading">
-        <p class="eyebrow">Tournament Legacy</p>
-        <h2 id="legacy-title">The Pa George 9-Ball story is a living archive, not a fixed claim</h2>
-      </div>
-
-      <div class="verification-banner" role="note">
-        Family verification required: the timeline below is intentionally labeled as a working archive, not final history.
-      </div>
-
-      <div class="panel">
-        <p>The George Carey / Pa George 9-Ball Tournament has become a community tradition built around friendship, family, good competition, and community support.</p>
-      </div>
-
-      <div class="feature-grid feature-grid--5">
-        <article class="info-card info-card--accent reveal">
-          <h3>Tournament History</h3>
-          <p>Shared stories, yearly updates, and verified archive notes can live here.</p>
-        </article>
-        <article class="info-card info-card--accent reveal">
-          <h3>Annual 9-Ball Event</h3>
-          <p>Use this space for confirmed yearly event details only.</p>
-        </article>
-        <article class="info-card info-card--accent reveal">
-          <h3>Community Support</h3>
-          <p>Keep verified archive notes, sponsor recognition, and event support details listed only after confirmation.</p>
-        </article>
-        <article class="info-card info-card--accent reveal">
-          <h3>Sponsors &amp; Supporters</h3>
-          <p>Recognize community support with permission and careful wording.</p>
-        </article>
-        <article class="info-card info-card--accent reveal">
-          <h3>Family Legacy</h3>
-          <p>Preserve the tournament as a family archive that can grow year by year.</p>
-        </article>
-      </div>
-
-      <div class="timeline panel">
-        <h3>Family Archive Timeline — Details To Be Verified</h3>
-        <div class="timeline-list">
-          <article class="timeline-item reveal">
-            <span class="timeline-year">2014</span>
-            <p>Tournament legacy begins / verify details</p>
-          </article>
-          <article class="timeline-item reveal">
-            <span class="timeline-year">2018</span>
-            <p>George Carey Open / milestone year / verify details</p>
-          </article>
-          <article class="timeline-item reveal">
-            <span class="timeline-year">2023</span>
-            <p>Pa George celebrated by community / verify details</p>
-          </article>
-          <article class="timeline-item reveal">
-            <span class="timeline-year">2024</span>
-            <p>Community support year / verify details</p>
-          </article>
-          <article class="timeline-item reveal">
-            <span class="timeline-year">2025</span>
-            <p>Milestone tournament year / verify details</p>
-          </article>
-          <article class="timeline-item reveal">
-            <span class="timeline-year">2026</span>
-            <p>Current or upcoming tournament details / verify details</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="event" aria-labelledby="event-title">
-      <div class="section-heading">
-        <p class="eyebrow">Event Info</p>
-        <h2 id="event-title">Annual Pa George Memorial 9-Ball Tournament</h2>
-      </div>
-
-      <article class="event-poster panel">
-        <div class="event-copy" id="event-copy-source">
-          <p class="event-lead">Current event details should be confirmed by the family before publication.</p>
-          <dl class="event-details">
+      <main id="app" class="content">
+        <section class="screen screen-dashboard" id="dashboard" aria-labelledby="dashboard-title">
+          <div class="section-header">
             <div>
-              <dt>Date</dt>
-              <dd>[Add Date]</dd>
+              <p class="eyebrow">Dashboard</p>
+              <h3 id="dashboard-title">Studio overview</h3>
             </div>
-            <div>
-              <dt>Time</dt>
-              <dd>[Add Time]</dd>
-            </div>
-            <div>
-              <dt>Location</dt>
-              <dd>[Add Venue]</dd>
-            </div>
-            <div>
-              <dt>Registration</dt>
-              <dd>[Add Details]</dd>
-            </div>
-            <div>
-              <dt>Entry Fee</dt>
-              <dd>[Add Details]</dd>
-            </div>
-            <div>
-              <dt>Contact</dt>
-              <dd>[Add Family-Approved Contact]</dd>
-            </div>
-            <div>
-              <dt>Approved Support Note</dt>
-              <dd>[Add approved support note]</dd>
-            </div>
-            <div>
-              <dt>Silent Auction</dt>
-              <dd>[Yes/No + Details]</dd>
-            </div>
-            <div>
-              <dt>Sponsors</dt>
-              <dd>[Add Sponsors]</dd>
-            </div>
-          </dl>
-        </div>
-
-        <div class="event-actions screen-only">
-          <button class="button button-primary" type="button" data-copy-event-details>Copy Event Details</button>
-          <button class="button button-secondary" type="button" data-print-poster>Print Event Poster</button>
-          <button class="button button-secondary" type="button" data-coming-soon>Add to Calendar - Coming Soon</button>
-        </div>
-
-        <p class="event-note">Want to play, sponsor, contribute an auction item, or help out? Contact the family or event organizer below.</p>
-      </article>
-    </section>
-
-    <section class="section reveal" id="sponsors" aria-labelledby="sponsors-title">
-      <div class="section-heading">
-        <p class="eyebrow">Sponsors</p>
-        <h2 id="sponsors-title">Sponsor recognition belongs here only after permission is confirmed</h2>
-      </div>
-
-      <div class="panel">
-        <p>Pa’s Place recognizes the people and businesses who help keep this community tradition alive.</p>
-      </div>
-
-      <div class="sponsor-groups">
-        <article class="sponsor-group reveal">
-          <h3>Gold Sponsors</h3>
-          <div class="placeholder-grid">
-            <div class="placeholder-card">Sponsor Name Coming Soon</div>
-            <div class="placeholder-card">Sponsor Name Coming Soon</div>
+            <p class="section-note">Use the quick actions to create original drafts, inspect rights, and export a release pack.</p>
           </div>
-        </article>
-        <article class="sponsor-group reveal">
-          <h3>Silver Sponsors</h3>
-          <div class="placeholder-grid">
-            <div class="placeholder-card">Sponsor Name Coming Soon</div>
-            <div class="placeholder-card">Sponsor Name Coming Soon</div>
+
+          <div class="overview-grid">
+            <article class="stat-card">
+              <span class="stat-label">Artists</span>
+              <strong id="stat-artists">0</strong>
+              <p>Persistent profiles in the artist vault.</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-label">Voice profiles</span>
+              <strong id="stat-voices">0</strong>
+              <p>Original, licensed, or user-owned voices only.</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-label">Albums</span>
+              <strong id="stat-albums">0</strong>
+              <p>Release-ready track collections and metadata.</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-label">Rights checks</span>
+              <strong id="stat-rights">0</strong>
+              <p>Ledger entries tied to every generated asset.</p>
+            </article>
           </div>
-        </article>
-        <article class="sponsor-group reveal">
-          <h3>Community Supporters</h3>
-          <div class="placeholder-grid">
-            <div class="placeholder-card">Community Supporter Coming Soon</div>
-            <div class="placeholder-card">Community Supporter Coming Soon</div>
+
+          <div class="panel-grid">
+            <article class="panel">
+              <h4>Design system snapshot</h4>
+              <div class="token-grid" id="token-swatches"></div>
+            </article>
+            <article class="panel">
+              <h4>Current focus</h4>
+              <p id="current-focus">No selection yet. Choose an artist and album to start generating structured drafts.</p>
+              <div class="selection-grid">
+                <label>
+                  <span>Artist</span>
+                  <select id="artist-select" data-bind="artist"></select>
+                </label>
+                <label>
+                  <span>Album</span>
+                  <select id="album-select" data-bind="album"></select>
+                </label>
+                <label>
+                  <span>Voice profile</span>
+                  <select id="voice-select" data-bind="voice"></select>
+                </label>
+              </div>
+            </article>
           </div>
-        </article>
-        <article class="sponsor-group reveal">
-          <h3>Silent Auction Donors</h3>
-          <div class="placeholder-grid">
-            <div class="placeholder-card">Silent Auction Donor Coming Soon</div>
-            <div class="placeholder-card">Silent Auction Donor Coming Soon</div>
+
+          <div class="panel-grid">
+            <article class="panel">
+              <h4>Recent queue</h4>
+              <div id="queue-preview" class="stack"></div>
+            </article>
+            <article class="panel">
+              <h4>Commercial readiness</h4>
+              <ul id="readiness-preview" class="checklist compact"></ul>
+            </article>
           </div>
-        </article>
-      </div>
+        </section>
 
-      <div class="panel callout">
-        <p>If you would like to sponsor, please use the contact section below once a family-approved email is added.</p>
-        <a class="button button-primary" href="#contact">Sponsor Inquiry</a>
-      </div>
-    </section>
-
-    <section class="section reveal" id="giving-back" aria-labelledby="giving-back-title">
-      <div class="section-heading">
-        <p class="eyebrow">Community Support</p>
-        <h2 id="giving-back-title">Support details stay careful, verified, and family-approved</h2>
-      </div>
-
-      <div class="panel">
-        <p>“Community support has always been part of the spirit of Pa’s Place. Verified tournament notes, sponsor thanks, and any approved support details will be listed here once the family confirms them.”</p>
-        <p class="strong-note">Only approved event support details will be published here.</p>
-      </div>
-    </section>
-
-    <section class="section reveal" id="memory" aria-labelledby="memory-title">
-      <div class="section-heading">
-        <p class="eyebrow">Memory Wall</p>
-        <h2 id="memory-title">A warm place for family-approved stories</h2>
-      </div>
-
-      <p class="section-intro">Stories shown here should be family-approved before publishing.</p>
-
-      <div class="memory-wall">
-        <article class="memory-card reveal">
-          <h3>A Lesson From Pa</h3>
-          <p>[Short placeholder memory about something Pa taught or modeled.]</p>
-          <footer>— [Family Member Name]</footer>
-        </article>
-        <article class="memory-card reveal">
-          <h3>A Pool Hall Memory</h3>
-          <p>[Short placeholder memory from a night at the table, a match, or a laugh with friends.]</p>
-          <footer>— [Family Member Name]</footer>
-        </article>
-        <article class="memory-card reveal">
-          <h3>A Family Gathering</h3>
-          <p>[Short placeholder memory about a family meal, holiday, or gathering.]</p>
-          <footer>— [Family Member Name]</footer>
-        </article>
-        <article class="memory-card reveal">
-          <h3>A Moment We’ll Never Forget</h3>
-          <p>[Short placeholder memory that feels personal, respectful, and true.]</p>
-          <footer>— [Family Member Name]</footer>
-        </article>
-      </div>
-    </section>
-
-    <section class="section reveal" id="gallery" aria-labelledby="gallery-title">
-      <div class="section-heading">
-        <p class="eyebrow">Photo Gallery</p>
-        <h2 id="gallery-title">Placeholder images are supported, so the site still feels complete</h2>
-      </div>
-
-      <div class="gallery-grid">
-        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Pa George" data-gallery-caption="Pa George" data-gallery-src="assets/images/pa-george-1.jpg" data-gallery-alt="Family photo placeholder for Pa George">
-          <span class="gallery-media">
-            <img src="assets/images/pa-george-1.jpg" alt="Family photo placeholder for Pa George" loading="lazy">
-            <span class="gallery-placeholder" aria-hidden="true">
-              <span class="gallery-placeholder__ball">9</span>
-              <span>Photo coming soon</span>
-            </span>
-          </span>
-          <span class="gallery-meta">Pa George</span>
-        </button>
-
-        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Tournament" data-gallery-caption="Tournament" data-gallery-src="assets/images/tournament-1.jpg" data-gallery-alt="Tournament photo placeholder">
-          <span class="gallery-media">
-            <img src="assets/images/tournament-1.jpg" alt="Tournament photo placeholder" loading="lazy">
-            <span class="gallery-placeholder" aria-hidden="true">
-              <span class="gallery-placeholder__ball">Rack</span>
-              <span>Photo coming soon</span>
-            </span>
-          </span>
-          <span class="gallery-meta">Tournament</span>
-        </button>
-
-        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Family" data-gallery-caption="Family" data-gallery-src="assets/images/family-1.jpg" data-gallery-alt="Family photo placeholder">
-          <span class="gallery-media">
-            <img src="assets/images/family-1.jpg" alt="Family photo placeholder" loading="lazy">
-            <span class="gallery-placeholder" aria-hidden="true">
-              <span class="gallery-placeholder__ball">Home</span>
-              <span>Photo coming soon</span>
-            </span>
-          </span>
-          <span class="gallery-meta">Family</span>
-        </button>
-
-        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Players" data-gallery-caption="Players" data-gallery-src="assets/images/players-1.jpg" data-gallery-alt="Players photo placeholder">
-          <span class="gallery-media">
-            <img src="assets/images/players-1.jpg" alt="Players photo placeholder" loading="lazy">
-            <span class="gallery-placeholder" aria-hidden="true">
-              <span class="gallery-placeholder__ball">Cue</span>
-              <span>Photo coming soon</span>
-            </span>
-          </span>
-          <span class="gallery-meta">Players</span>
-        </button>
-
-        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Sponsors" data-gallery-caption="Sponsors" data-gallery-src="assets/images/sponsors-1.jpg" data-gallery-alt="Sponsors photo placeholder">
-          <span class="gallery-media">
-            <img src="assets/images/sponsors-1.jpg" alt="Sponsors photo placeholder" loading="lazy">
-            <span class="gallery-placeholder" aria-hidden="true">
-              <span class="gallery-placeholder__ball">Thanks</span>
-              <span>Photo coming soon</span>
-            </span>
-          </span>
-          <span class="gallery-meta">Sponsors</span>
-        </button>
-
-        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Community" data-gallery-caption="Community" data-gallery-src="assets/images/community-1.jpg" data-gallery-alt="Community photo placeholder">
-          <span class="gallery-media">
-            <img src="assets/images/community-1.jpg" alt="Community photo placeholder" loading="lazy">
-            <span class="gallery-placeholder" aria-hidden="true">
-              <span class="gallery-placeholder__ball">Carey</span>
-              <span>Photo coming soon</span>
-            </span>
-          </span>
-          <span class="gallery-meta">Community</span>
-        </button>
-      </div>
-    </section>
-
-    <section class="section reveal" id="contact" aria-labelledby="contact-title">
-      <div class="section-heading">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Use mailto only when the family has approved the address</h2>
-      </div>
-
-      <div class="contact-grid">
-        <article class="panel contact-card">
-          <h3>Contact Reasons</h3>
-          <ul class="plain-list">
-            <li>Tournament questions</li>
-            <li>Sponsorship</li>
-            <li>Silent auction items</li>
-            <li>Family archive/photo submissions</li>
-            <li>Corrections to website information</li>
-          </ul>
-          <p class="strong-note">Please do not send private family information unless you have permission from those involved.</p>
-        </article>
-
-        <article class="panel contact-card">
-          <h3>Family-Approved Email</h3>
-          <p class="email-placeholder">[ADD_FAMILY_APPROVED_EMAIL_HERE]</p>
-          <p>This contact area intentionally avoids a form. Add a verified email address before publishing any mailto link.</p>
-          <div class="contact-actions">
-            <span class="button button-primary button-disabled" aria-disabled="true">Contact Email Coming Soon</span>
+        <section class="screen" id="artist-vault" aria-labelledby="artist-vault-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Artist Vault</p>
+              <h3 id="artist-vault-title">Persistent artist identities</h3>
+            </div>
+            <p class="section-note">Each profile stores brand direction, allowed references, banned words, and legal notes.</p>
           </div>
-        </article>
-      </div>
-    </section>
-  </main>
 
-  <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>Top</button>
+          <div class="two-column">
+            <article class="panel">
+              <h4>Create artist profile</h4>
+              <form id="artist-form" class="form-grid" data-form="artist">
+                <label><span>Artist name</span><input name="name" required placeholder="New artist name"></label>
+                <label><span>Genre identity</span><input name="genre" required placeholder="Original genre description"></label>
+                <label><span>Vocal tone notes</span><input name="tone" required placeholder="Warm, gritty, airy, etc."></label>
+                <label><span>Lyrical themes</span><textarea name="themes" rows="3" required placeholder="Comma-separated themes"></textarea></label>
+                <label><span>Banned words</span><textarea name="banned" rows="2" placeholder="Comma-separated blocked terms"></textarea></label>
+                <label><span>Allowed references</span><textarea name="allowed" rows="2" placeholder="Safe creative references"></textarea></label>
+                <label><span>Visual brand direction</span><textarea name="visual" rows="2" required placeholder="Color, texture, and mood direction"></textarea></label>
+                <label><span>Legal notes</span><textarea name="legal" rows="2" required placeholder="Ownership, consent, and usage notes"></textarea></label>
+                <button class="button button-primary" type="submit">Create artist</button>
+              </form>
+            </article>
 
-  <footer class="site-footer">
-    <p>Pa’s Place — Honouring George Alexander Carey, Pa George.</p>
-    <p>Built with love by family, for family, friends, players, and community.</p>
-    <nav class="footer-nav" aria-label="Footer">
-      <a href="#home">Home</a>
-      <a href="#legacy">Tournament</a>
-      <a href="#sponsors">Sponsors</a>
-      <a href="#contact">Contact</a>
-      <a href="PRIVACY_AND_SAFETY.md">Privacy &amp; Safety</a>
-    </nav>
-  </footer>
+            <article class="panel">
+              <h4>Starter profiles</h4>
+              <div id="artists-list" class="stack"></div>
+            </article>
+          </div>
+        </section>
 
-  <div class="gallery-modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="gallery-modal-title">
-    <div class="gallery-modal__backdrop" data-gallery-close></div>
-    <div class="gallery-modal__panel" role="document">
-      <button class="gallery-modal__close" type="button" data-gallery-close aria-label="Close gallery preview">Close</button>
-      <div class="gallery-modal__media">
-        <img class="gallery-modal__image" alt="">
-        <div class="gallery-modal__placeholder" aria-hidden="true">
-          <span class="gallery-placeholder__ball">9</span>
-          <span>Photo coming soon</span>
-        </div>
-      </div>
-      <div class="gallery-modal__copy">
-        <h3 id="gallery-modal-title"></h3>
-        <p id="gallery-modal-caption"></p>
-      </div>
+        <section class="screen" id="voice-builder" aria-labelledby="voice-builder-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Voice Profile Builder</p>
+              <h3 id="voice-builder-title">Legal-first vocal identities</h3>
+            </div>
+            <p class="section-note">Use original, user-owned, licensed, or public-domain voice sources only.</p>
+          </div>
+
+          <div class="two-column">
+            <article class="panel">
+              <h4>Create voice profile</h4>
+              <form id="voice-form" class="form-grid" data-form="voice">
+                <label><span>Linked artist</span><select name="artistId" id="voice-artist-select"></select></label>
+                <label><span>Voice name</span><input name="name" required placeholder="Studio voice name"></label>
+                <label><span>Presentation</span><input name="presentation" required placeholder="Neutral / masculine / feminine / other"></label>
+                <label><span>Range</span><input name="range" required placeholder="Baritone, mezzo, etc."></label>
+                <label><span>Tone</span><input name="tone" required placeholder="Velvet, bright, grounded"></label>
+                <label><span>Grit level</span><input name="grit" type="number" min="0" max="10" value="3"></label>
+                <label><span>Breathiness</span><input name="breathiness" type="number" min="0" max="10" value="4"></label>
+                <label><span>Vibrato</span><input name="vibrato" type="number" min="0" max="10" value="3"></label>
+                <label><span>Rasp</span><input name="rasp" type="number" min="0" max="10" value="2"></label>
+                <label><span>Accent strength</span><input name="accent" type="number" min="0" max="10" value="2"></label>
+                <label><span>Delivery speed</span><input name="speed" type="number" min="0" max="10" value="5"></label>
+                <label><span>Emotion curve</span><input name="emotion" required placeholder="Steady verse, lift in chorus, soft landing"></label>
+                <label><span>Consistency seed</span><input name="seed" required placeholder="steady-voice-001"></label>
+                <label><span>Prohibited similarity target</span><input name="prohibited" required placeholder="No real artist imitation"></label>
+                <label><span>License / consent proof</span><input name="proof" required placeholder="Documented permission or source"></label>
+                <button class="button button-primary" type="submit">Create voice profile</button>
+              </form>
+            </article>
+
+            <article class="panel">
+              <h4>Voice profiles</h4>
+              <div id="voice-list" class="stack"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="vocal-lab" aria-labelledby="vocal-lab-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Vocal Consistency Lab</p>
+              <h3 id="vocal-lab-title">Keep vocals steady across songs</h3>
+            </div>
+            <p class="section-note">Seed locking, timbre control, and similarity warnings stay visible at every step.</p>
+          </div>
+
+          <div class="two-column">
+            <article class="panel">
+              <h4>Consistency controls</h4>
+              <label class="toggle-row"><span>Vocal identity lock</span><input id="identity-lock" type="checkbox"></label>
+              <label class="toggle-row"><span>Timbre lock</span><input id="timbre-lock" type="checkbox"></label>
+              <label class="toggle-row"><span>Range limiter</span><input id="range-limiter" type="checkbox"></label>
+              <label class="toggle-row"><span>Phrase memory</span><input id="phrase-memory" type="checkbox" checked></label>
+              <label class="toggle-row"><span>Similarity warning system</span><input id="similarity-warning" type="checkbox" checked></label>
+              <label><span>Pronunciation dictionary</span><textarea id="pronunciation-dictionary" rows="4" placeholder="Per-word pronunciation notes"></textarea></label>
+              <label><span>Recurring ad-lib library</span><textarea id="ad-lib-library" rows="4" placeholder="Safe original ad-lib prompts"></textarea></label>
+              <button class="button button-secondary" type="button" data-action="save-lab-settings">Save lab settings</button>
+            </article>
+
+            <article class="panel">
+              <h4>Consistency warnings</h4>
+              <div id="consistency-output" class="stack"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="lyric-studio" aria-labelledby="lyric-studio-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Lyric Studio</p>
+              <h3 id="lyric-studio-title">Structured lyric workflow</h3>
+            </div>
+            <p class="section-note">Original-only lyric drafting with a copyright-risk warning placeholder.</p>
+          </div>
+
+          <div class="two-column">
+            <article class="panel">
+              <h4>Build lyric draft</h4>
+              <form id="lyric-form" class="form-grid" data-form="lyrics">
+                <label><span>Artist</span><select name="artistId" id="lyric-artist-select"></select></label>
+                <label><span>Album</span><select name="albumId" id="lyric-album-select"></select></label>
+                <label><span>Song title</span><input name="title" required placeholder="Track title"></label>
+                <label><span>Album concept</span><input name="concept" required placeholder="Project concept"></label>
+                <label><span>Runtime target</span><input name="runtime" required placeholder="2:45"></label>
+                <label><span>Rhyme density</span><input name="rhymeDensity" type="number" min="1" max="10" value="6"></label>
+                <label><span>Hook strength</span><input name="hookStrength" type="number" min="1" max="10" value="7"></label>
+                <label><span>Emotion arc</span><input name="emotionArc" required placeholder="Tension to release"></label>
+                <label><span>Prompt notes</span><textarea name="notes" rows="4" placeholder="Original-only creative notes"></textarea></label>
+                <div class="button-row">
+                  <button class="button button-primary" type="submit">Generate lyric draft</button>
+                  <button class="button button-secondary" type="button" data-action="copy-lyrics">Copy lyrics</button>
+                </div>
+              </form>
+            </article>
+
+            <article class="panel">
+              <h4>Draft output</h4>
+              <div id="lyric-output" class="draft-output"></div>
+              <div id="lyric-warning" class="warning-box"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="style-studio" aria-labelledby="style-studio-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Style Prompt Studio</p>
+              <h3 id="style-studio-title">Prompt controls for safe generation</h3>
+            </div>
+            <p class="section-note">Built for copy-paste into local or licensed providers without soundalike instructions.</p>
+          </div>
+
+          <div class="two-column">
+            <article class="panel">
+              <h4>Prompt builder</h4>
+              <form id="style-form" class="form-grid" data-form="style">
+                <label><span>Genre blend</span><input name="genreBlend" required placeholder="industrial pop / synth soul"></label>
+                <label><span>BPM</span><input name="bpm" required placeholder="92"></label>
+                <label><span>Key</span><input name="key" required placeholder="A minor"></label>
+                <label><span>Energy level</span><input name="energy" required placeholder="Medium-high"></label>
+                <label><span>Mood</span><input name="mood" required placeholder="Resolute, cinematic"></label>
+                <label><span>Instrumentation</span><textarea name="instrumentation" rows="3" required placeholder="Bass, drums, synth, piano"></textarea></label>
+                <label><span>Vocal direction</span><textarea name="vocal" rows="3" required placeholder="Clear, grounded, original"></textarea></label>
+                <label><span>Mix direction</span><textarea name="mix" rows="3" required placeholder="Warm low end, wide chorus, controlled transients"></textarea></label>
+                <label><span>Mastering target</span><input name="mastering" required placeholder="Streaming-safe, balanced"></label>
+                <label><span>Era influence</span><input name="era" required placeholder="Late-2000s electro-rock energy"></label>
+                <label><span>Avoid soundalike</span><input name="avoid" required placeholder="No imitation or clone cues"></label>
+                <div class="button-row">
+                  <button class="button button-primary" type="submit">Generate style prompt</button>
+                  <button class="button button-secondary" type="button" data-action="copy-style-prompt">Copy prompt</button>
+                </div>
+              </form>
+            </article>
+
+            <article class="panel">
+              <h4>Prompt output</h4>
+              <div id="style-output" class="draft-output"></div>
+              <div id="style-warning" class="warning-box"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="song-builder" aria-labelledby="song-builder-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Song Builder</p>
+              <h3 id="song-builder-title">Assemble a track from legal building blocks</h3>
+            </div>
+            <p class="section-note">Generate a draft, keep the chorus, replace a verse, and save versions.</p>
+          </div>
+
+          <div class="two-column">
+            <article class="panel">
+              <h4>Song workflow</h4>
+              <form id="song-form" class="form-grid" data-form="song">
+                <label><span>Artist</span><select name="artistId" id="song-artist-select"></select></label>
+                <label><span>Voice profile</span><select name="voiceId" id="song-voice-select"></select></label>
+                <label><span>Album</span><select name="albumId" id="song-album-select"></select></label>
+                <label><span>Song title</span><input name="title" required placeholder="Song title"></label>
+                <label><span>Lyric draft</span><textarea name="lyrics" rows="6" required placeholder="Paste or generate lyrics"></textarea></label>
+                <label><span>Style prompt</span><textarea name="stylePrompt" rows="6" required placeholder="Paste or generate style prompt"></textarea></label>
+                <label><span>Arrangement template</span><input name="template" required placeholder="Intro / Verse / Chorus"></label>
+                <label><span>Duration target</span><input name="duration" required placeholder="3:12"></label>
+                <div class="button-row">
+                  <button class="button button-primary" type="submit">Generate song draft</button>
+                  <button class="button button-secondary" type="button" data-action="save-song-version">Save version</button>
+                </div>
+              </form>
+            </article>
+
+            <article class="panel">
+              <h4>Latest draft</h4>
+              <div id="song-output" class="draft-output"></div>
+              <div class="button-row">
+                <button class="button button-secondary" type="button" data-action="regenerate-verse">Replace verse</button>
+                <button class="button button-secondary" type="button" data-action="keep-chorus">Keep chorus</button>
+                <button class="button button-secondary" type="button" data-action="lock-hook">Lock hook</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="arrangement" aria-labelledby="arrangement-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Arrangement Timeline</p>
+              <h3 id="arrangement-title">DAW-inspired song structure</h3>
+            </div>
+            <p class="section-note">Adjust section duration, intensity, and regeneration notes without referencing any copied arrangement.</p>
+          </div>
+
+          <div class="panel">
+            <div id="arrangement-list" class="timeline"></div>
+          </div>
+        </section>
+
+        <section class="screen" id="stem-mixer" aria-labelledby="stem-mixer-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Stem Mixer</p>
+              <h3 id="stem-mixer-title">Preview channel balance before export</h3>
+            </div>
+            <p class="section-note">Vocals, drums, bass, guitar, synth, piano, FX, backing vocals, and master channel.</p>
+          </div>
+
+          <div class="panel">
+            <div id="stems-list" class="stem-grid"></div>
+          </div>
+        </section>
+
+        <section class="screen" id="queue" aria-labelledby="queue-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Generation Queue</p>
+              <h3 id="queue-title">Queue-based generation with retry controls</h3>
+            </div>
+            <p class="section-note">Track status, provider, and retries without assuming unlimited compute.</p>
+          </div>
+
+          <div class="panel">
+            <div id="queue-list" class="stack"></div>
+          </div>
+        </section>
+
+        <section class="screen" id="rights-ledger" aria-labelledby="rights-ledger-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Rights Ledger</p>
+              <h3 id="rights-ledger-title">Asset-level provenance and ownership notes</h3>
+            </div>
+            <p class="section-note">Every generated asset keeps source, license, commercial status, and export history fields.</p>
+          </div>
+
+          <div class="panel">
+            <div id="ledger-list" class="ledger-table"></div>
+          </div>
+        </section>
+
+        <section class="screen" id="album-builder" aria-labelledby="album-builder-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Album Builder</p>
+              <h3 id="album-builder-title">Tracklists, metadata, and release prep</h3>
+            </div>
+            <p class="section-note">Create a release pack with CSV metadata, release notes, and title-casing help.</p>
+          </div>
+
+          <div class="two-column">
+            <article class="panel">
+              <h4>Create album</h4>
+              <form id="album-form" class="form-grid" data-form="album">
+                <label><span>Album title</span><input name="title" required placeholder="Album title"></label>
+                <label><span>Artist</span><select name="artistId" id="album-artist-select"></select></label>
+                <label><span>Genre</span><input name="genre" required placeholder="Release genre"></label>
+                <label><span>Track count</span><input name="trackCount" type="number" min="1" max="30" value="10"></label>
+                <label><span>Release notes</span><textarea name="notes" rows="3" required placeholder="Original release notes"></textarea></label>
+                <label><span>Credits</span><textarea name="credits" rows="3" required placeholder="Writer, producer, publisher notes"></textarea></label>
+                <label><span>Explicit markers</span><input name="explicit" placeholder="Clean / explicit / mixed"></label>
+                <button class="button button-primary" type="submit">Create album</button>
+                <button class="button button-secondary" type="button" data-action="generate-tracklist">Generate tracklist</button>
+              </form>
+            </article>
+
+            <article class="panel">
+              <h4>Album output</h4>
+              <div id="album-tracklist" class="stack"></div>
+              <div class="button-row">
+                <button class="button button-secondary" type="button" data-action="copy-metadata">Copy metadata CSV</button>
+                <button class="button button-secondary" type="button" data-action="title-case">Title case helper</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="cover-art" aria-labelledby="cover-art-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Cover Art Prompt Studio</p>
+              <h3 id="cover-art-title">Square art prompts with trademark-safe language</h3>
+            </div>
+            <p class="section-note">Use abstract visual direction only. No real logos, no trademarked equipment branding.</p>
+          </div>
+
+          <div class="two-column">
+            <article class="panel">
+              <h4>Prompt builder</h4>
+              <form id="cover-form" class="form-grid" data-form="cover">
+                <label><span>Album title</span><input name="albumTitle" required placeholder="Album title"></label>
+                <label><span>Artist name</span><input name="artistName" required placeholder="Artist name"></label>
+                <label><span>Visual theme</span><textarea name="theme" rows="4" required placeholder="Cinematic, dark chrome, neon, paper, etc."></textarea></label>
+                <label><span>No real logos</span><input name="noLogos" value="Avoid all real logos and trademarked branding" required></label>
+                <label><span>Square mode</span><input name="square" value="3000x3000 square cover" required></label>
+                <label><span>DistroKid-safe checklist</span><textarea name="checklist" rows="4" required placeholder="Original imagery, no brand marks, no copyrighted references"></textarea></label>
+                <button class="button button-primary" type="submit">Generate cover prompt</button>
+              </form>
+            </article>
+
+            <article class="panel">
+              <h4>Cover prompt</h4>
+              <div id="cover-output" class="draft-output"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="export" aria-labelledby="export-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Export & Release Checklist</p>
+              <h3 id="export-title">Prepare a manual release pack</h3>
+            </div>
+            <p class="section-note">The app can write a real folder tree when the browser supports folder access. Otherwise it downloads a manifest.</p>
+          </div>
+
+          <div class="two-column">
+            <article class="panel">
+              <h4>Checklist</h4>
+              <ul id="checklist-list" class="checklist"></ul>
+            </article>
+
+            <article class="panel">
+              <h4>Export options</h4>
+              <div class="button-row">
+                <button class="button button-primary" type="button" data-action="export-package">Export release pack</button>
+                <button class="button button-secondary" type="button" data-action="download-manifest">Download manifest JSON</button>
+                <button class="button button-secondary" type="button" data-action="download-tree">Copy folder tree</button>
+              </div>
+              <div id="export-output" class="draft-output"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="settings" aria-labelledby="settings-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Settings</p>
+              <h3 id="settings-title">Local-first storage and budget controls</h3>
+            </div>
+            <p class="section-note">No telemetry by default, API keys stay manual, and backups are user-triggered.</p>
+          </div>
+
+          <div class="two-column">
+            <article class="panel">
+              <h4>Preferences</h4>
+              <label class="toggle-row"><span>Local-first storage</span><input id="local-first" type="checkbox" checked></label>
+              <label class="toggle-row"><span>No telemetry by default</span><input id="telemetry" type="checkbox" checked disabled></label>
+              <label class="toggle-row"><span>Prompt warnings</span><input id="prompt-warnings" type="checkbox" checked></label>
+              <label class="toggle-row"><span>Auto-save drafts</span><input id="auto-save" type="checkbox" checked></label>
+              <label><span>Generation budget</span><input id="generation-budget" type="number" min="1" value="8"></label>
+              <label><span>Storage target</span><input id="storage-target" type="text" value="Local browser storage"></label>
+              <label><span>API key vault placeholder</span><input id="api-vault" type="text" value="Encrypted placeholder only"></label>
+              <button class="button button-secondary" type="button" data-action="save-settings">Save settings</button>
+            </article>
+
+            <article class="panel">
+              <h4>Privacy and backup</h4>
+              <div id="settings-output" class="stack"></div>
+              <div class="button-row">
+                <button class="button button-secondary" type="button" data-action="backup-data">Backup export</button>
+                <button class="button button-secondary" type="button" data-action="clear-data">Delete local data</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="legal" aria-labelledby="legal-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Legal Compliance Center</p>
+              <h3 id="legal-title">Hard rules and prompt validation</h3>
+            </div>
+            <p class="section-note">If a prompt asks for copyrighted lyrics, real-artist imitation, or trademark misuse, the app warns instead of pretending it is safe.</p>
+          </div>
+
+          <div class="panel-grid">
+            <article class="panel">
+              <h4>Safety rules</h4>
+              <ul class="bullets">
+                <li>Use only owned, licensed, public-domain, or original material.</li>
+                <li>Do not imitate living artists or clone real voices without explicit consent.</li>
+                <li>Do not scrape platforms, bypass DRM, or automate release actions.</li>
+                <li>Store a rights record for every asset, dataset, prompt, and export.</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <h4>Prompt risk scan</h4>
+              <div id="legal-warnings" class="warning-box"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="datasets" aria-labelledby="datasets-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Dataset / License Manager</p>
+              <h3 id="datasets-title">Track proofs, permissions, and dataset sources</h3>
+            </div>
+            <p class="section-note">A commercial platform should not ship without license evidence and provenance notes.</p>
+          </div>
+
+          <div class="two-column">
+            <article class="panel">
+              <h4>Add license entry</h4>
+              <form id="license-form" class="form-grid" data-form="license">
+                <label><span>Source name</span><input name="source" required placeholder="Dataset, sample pack, or voice source"></label>
+                <label><span>License type</span><input name="license" required placeholder="Owned, licensed, public domain, user-created"></label>
+                <label><span>Proof location</span><input name="proof" required placeholder="Document, folder, or contract reference"></label>
+                <label><span>Notes</span><textarea name="notes" rows="4" required placeholder="Rights boundaries and allowed use"></textarea></label>
+                <button class="button button-primary" type="submit">Add license entry</button>
+              </form>
+            </article>
+
+            <article class="panel">
+              <h4>License inventory</h4>
+              <div id="license-list" class="stack"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="development" aria-labelledby="development-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Personal Development Mode</p>
+              <h3 id="development-title">Experiment freely, stay within the guardrails</h3>
+            </div>
+            <p class="section-note">This mode is for local iteration, not for bypassing rights or platform rules.</p>
+          </div>
+
+          <div class="panel-grid">
+            <article class="panel">
+              <h4>Mode summary</h4>
+              <div id="mode-output" class="stack"></div>
+            </article>
+            <article class="panel">
+              <h4>Planned capabilities</h4>
+              <ul class="bullets">
+                <li>Queue-based generation with retry limits.</li>
+                <li>Bring-your-own API key support with manual activation.</li>
+                <li>Local model adapter placeholder and cloud adapter placeholder.</li>
+                <li>Budget, storage, and history controls with no fake unlimited claims.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="debug" aria-labelledby="debug-title">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Admin Debug Console</p>
+              <h3 id="debug-title">Inspect the local state safely</h3>
+            </div>
+            <p class="section-note">Useful for checking what the browser has stored before export or reset.</p>
+          </div>
+
+          <div class="two-column">
+            <article class="panel">
+              <h4>State snapshot</h4>
+              <pre id="debug-output" class="debug-output"></pre>
+            </article>
+            <article class="panel">
+              <h4>Recovery actions</h4>
+              <div class="button-row">
+                <button class="button button-secondary" type="button" data-action="copy-debug">Copy JSON</button>
+                <button class="button button-secondary" type="button" data-action="reset-demo">Reset demo data</button>
+              </div>
+              <p class="section-note">Reset only affects this browser profile and keeps the rest of the workspace untouched.</p>
+            </article>
+          </div>
+        </section>
+      </main>
     </div>
   </div>
 
-  <script src="script.js" defer></script>
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
