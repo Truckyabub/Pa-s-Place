@@ -2,7 +2,7 @@
 
 ## Project Scope
 
-Pa’s Place is a static family tribute website intended for GitHub Pages.
+Steady Voice AI Studio is a local-first music creation workspace intended for private development and future licensed deployment.
 
 ## Security and Privacy Commitments
 

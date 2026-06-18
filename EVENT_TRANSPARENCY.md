@@ -2,7 +2,7 @@
 
 ## Current Status
 
-Pa’s Place does not process payments or monetary transactions through the website.
+Steady Voice AI Studio does not process payments or monetary transactions through the application.
 
 ## Required Verification
 
@@ -23,7 +23,7 @@ No public fundraising claim should be made until the family has verified the wor
 
 ## Tracking
 
-Public updates should be honest, documented, plain, and easy for families to understand.
+Public updates should be honest, documented, plain, and easy for users to understand.
 
 Suggested tracking fields after launch:
 

@@ -2,7 +2,7 @@
 
 ## Site Status
 
-Pa’s Place is a static family tribute site. It should remain simple, private where needed, and free of backend services.
+Steady Voice AI Studio is a local-first application. It should remain private where needed and free of unsafe backend or upload behavior by default.
 
 ## Current Security Boundaries
 
@@ -19,7 +19,7 @@ Pa’s Place is a static family tribute site. It should remain simple, private w
 
 ## Personal Information
 
-Do not publish private names, addresses, phone numbers, emails, or any family details that have not been approved for public viewing.
+Do not publish private names, addresses, phone numbers, emails, or any private data that has not been approved for public viewing.
 
 Private addresses must never be displayed publicly.
 
@@ -36,7 +36,7 @@ Before any form becomes active:
 
 ## Payments Later
 
-Do not collect credit card or banking details directly in this static site.
+Do not collect credit card or banking details directly in this app.
 
 ## Secrets
 

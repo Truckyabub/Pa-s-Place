@@ -2,9 +2,9 @@
 
 ## Purpose
 
-Pa’s Place exists to honour George Alexander Carey, lovingly known as Pa George, through verified family stories, pool memories, sponsor recognition, and the Pa George 9-Ball Tournament legacy.
+Steady Voice AI Studio exists as a legal-first music creation workspace for original artist identities, vocal consistency, prompt drafting, and rights-aware export planning.
 
-The project must not be redirected toward unrelated branding, outside campaigns, or content that does not belong to the Carey family tribute.
+The project must not be redirected toward scraped platform data, unauthorized voice cloning, or any workflow that violates copyright, publicity, or trademark rights.
 
 ## Launch Control
 
@@ -17,17 +17,16 @@ Major approval is required for major changes once the approved family steward or
 Major decisions include:
 
 - Public launch.
-- Event archive updates.
-- Sponsor recognition updates.
-- Photo or memory publication.
-- Contact information changes.
-- Use of names, logos, public claims, or archive dates.
+- Rights-ledger model changes.
+- Provider adapter changes.
+- Export format changes.
+- Dataset or license policy changes.
 - Ownership or admin transfer.
-- Adding or removing sections from the tribute site.
+- Adding or removing core studio modules.
 
 ## Approval Standard
 
-Major changes should require family approval from the approved steward or steward group once that group is formally named.
+Major changes should require documented approval from the project steward or steward group once that group is formally named.
 
 ## Decision Log
 
