@@ -3,27 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pa's Place is a family tribute website honouring George Alexander Carey, lovingly known as Pa George.">
+  <meta name="description" content="A family tribute website honouring George Alexander Carey, Pa George, and the community legacy of pool, family, and the annual 9-ball tournament.">
   <meta name="theme-color" content="#15372d">
-  <title>Pa's Place | Honouring George Alexander Carey</title>
+  <meta property="og:title" content="Pa’s Place | Honouring George Alexander Carey">
+  <meta property="og:description" content="A family tribute website honouring George Alexander Carey, Pa George, and the community legacy of pool, family, and the annual 9-ball tournament.">
+  <meta property="og:type" content="website">
+  <title>Pa’s Place | Honouring George Alexander Carey</title>
+  <!-- Favicon can be added here later if the family supplies one. -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="assets/css/print.css" media="print">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="brand" href="#home" aria-label="Pa's Place home">
+      <a class="brand" href="#home" aria-label="Pa’s Place home">
         <span class="brand-mark" aria-hidden="true">PP</span>
         <span class="brand-text">
-          <strong>Pa's Place</strong>
+          <strong>Pa’s Place</strong>
           <span>Family. Pool. Community. Legacy.</span>
         </span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span aria-hidden="true">Menu</span>
+      </button>
+
       <nav class="primary-nav" id="primary-nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#legacy">Legacy</a>
+        <a href="#home">Home</a>
+        <a href="#about">About Pa George</a>
+        <a href="#legacy">Tournament Legacy</a>
         <a href="#event">Event Info</a>
         <a href="#sponsors">Sponsors</a>
         <a href="#memory">Memory Wall</a>
@@ -37,20 +47,33 @@
     <section class="hero section reveal" id="home" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow">Family-built tribute</p>
-        <h1 id="hero-title">Pa's Place</h1>
-        <p class="hero-subtitle">Honouring George Alexander Carey, lovingly known as Pa George, with a respectful home for family stories, pool memories, sponsor recognition, and the Pa George 9-Ball Tournament legacy.</p>
-        <p class="hero-intro">Pa's Place is a family-built tribute to George Alexander Carey, lovingly known as Pa George, and the community spirit carried forward in his name.</p>
+        <h1 id="hero-title">Pa’s Place</h1>
+        <p class="hero-subtitle">Honouring George Alexander Carey, lovingly known as Pa George, with a warm home for family stories, pool memories, sponsor recognition, and the Pa George 9-Ball Tournament legacy.</p>
+        <p class="hero-tagline">Family. Pool. Community. Legacy.</p>
+        <p class="hero-intro">“Pa’s Place is a family-built tribute to George Alexander Carey, lovingly known as Pa George — a place to honour his life, his love of pool, his family, and the community spirit carried forward in his name.”</p>
+
         <div class="hero-actions">
           <a class="button button-primary" href="#about">Learn His Story</a>
           <a class="button button-secondary" href="#legacy">Tournament Legacy</a>
+          <a class="button button-secondary" href="#sponsors">Sponsor or Support</a>
           <a class="button button-secondary" href="#gallery">View Gallery</a>
         </div>
+
+        <p class="verification-note">Information marked as needing verification should be confirmed by family before publishing.</p>
       </div>
+
       <aside class="hero-visual" aria-hidden="true">
         <div class="felt-panel">
+          <div class="felt-glow"></div>
           <div class="felt-table">
+            <div class="table-rail table-rail-top"></div>
+            <div class="table-rail table-rail-bottom"></div>
+            <div class="table-rail table-rail-left"></div>
+            <div class="table-rail table-rail-right"></div>
+            <div class="rack"></div>
             <div class="cue"></div>
             <div class="nine-ball">9</div>
+            <div class="table-light"></div>
           </div>
           <div class="hero-card">
             <span class="badge">Legacy archive</span>
@@ -65,14 +88,37 @@
         <p class="eyebrow">About Pa George</p>
         <h2 id="about-title">A tribute that keeps family memories in the right hands</h2>
       </div>
-      <div class="panel">
-        <p>George Alexander Carey, known to many as Pa George, left behind more than memories. He left behind lessons, laughter, family stories, and a love for the game of pool that brought people together.</p>
+
+      <div class="panel panel-intro">
+        <p>“George Alexander Carey, known to many as Pa George, left behind more than memories. He left behind lessons, laughter, family stories, and a love for the game of pool that brought people together. Pa’s Place exists to keep that spirit alive for family, friends, players, and the community.”</p>
       </div>
-      <div class="feature-grid">
-        <article class="info-card"><h3>Life Dates</h3><p>[Add verified life dates if family chooses]</p></article>
-        <article class="info-card"><h3>Family Story</h3><p>[Add approved family story]</p></article>
-        <article class="info-card"><h3>Favourite Sayings</h3><p>[Add family-approved sayings]</p></article>
-        <article class="info-card"><h3>Pool Memories</h3><p>[Add verified memories]</p></article>
+
+      <div class="feature-grid feature-grid--5">
+        <article class="info-card reveal">
+          <h3>Life Dates</h3>
+          <!-- EDIT: Add verified life dates here only after family confirmation -->
+          <p>[Add verified life dates if family chooses]</p>
+        </article>
+        <article class="info-card reveal">
+          <h3>Family Story</h3>
+          <!-- EDIT: Add approved family story here only after family review -->
+          <p>[Add approved family story]</p>
+        </article>
+        <article class="info-card reveal">
+          <h3>Favourite Sayings</h3>
+          <!-- EDIT: Add family-approved sayings here only after family review -->
+          <p>[Add family-approved sayings]</p>
+        </article>
+        <article class="info-card reveal">
+          <h3>Pool Memories</h3>
+          <!-- EDIT: Add verified pool memories here only after family confirmation -->
+          <p>[Add verified memories]</p>
+        </article>
+        <article class="info-card reveal">
+          <h3>Community Memories</h3>
+          <!-- EDIT: Add verified community memories here only after family confirmation -->
+          <p>[Add verified memories]</p>
+        </article>
       </div>
     </section>
 
@@ -81,16 +127,65 @@
         <p class="eyebrow">Tournament Legacy</p>
         <h2 id="legacy-title">The Pa George 9-Ball story is a living archive, not a fixed claim</h2>
       </div>
+
+      <div class="verification-banner" role="note">
+        Family verification required: the timeline below is intentionally labeled as a working archive, not final history.
+      </div>
+
       <div class="panel">
         <p>The George Carey / Pa George 9-Ball Tournament has become a community tradition built around friendship, family, good competition, and community support.</p>
       </div>
+
+      <div class="feature-grid feature-grid--5">
+        <article class="info-card info-card--accent reveal">
+          <h3>Tournament History</h3>
+          <p>Shared stories, yearly updates, and verified archive notes can live here.</p>
+        </article>
+        <article class="info-card info-card--accent reveal">
+          <h3>Annual 9-Ball Event</h3>
+          <p>Use this space for confirmed yearly event details only.</p>
+        </article>
+        <article class="info-card info-card--accent reveal">
+          <h3>Community Support</h3>
+          <p>Keep verified archive notes, sponsor recognition, and event support details listed only after confirmation.</p>
+        </article>
+        <article class="info-card info-card--accent reveal">
+          <h3>Sponsors &amp; Supporters</h3>
+          <p>Recognize community support with permission and careful wording.</p>
+        </article>
+        <article class="info-card info-card--accent reveal">
+          <h3>Family Legacy</h3>
+          <p>Preserve the tournament as a family archive that can grow year by year.</p>
+        </article>
+      </div>
+
       <div class="timeline panel">
-        <h3>Family Archive Timeline</h3>
+        <h3>Family Archive Timeline — Details To Be Verified</h3>
         <div class="timeline-list">
-          <article class="timeline-item"><span class="timeline-year">2014</span><p>Tournament legacy begins / verify details</p></article>
-          <article class="timeline-item"><span class="timeline-year">2018</span><p>George Carey Open / milestone year / verify details</p></article>
-          <article class="timeline-item"><span class="timeline-year">2023</span><p>Pa George celebrated by community / verify details</p></article>
-          <article class="timeline-item"><span class="timeline-year">2024</span><p>Community support year / verify details</p></article>
+          <article class="timeline-item reveal">
+            <span class="timeline-year">2014</span>
+            <p>Tournament legacy begins / verify details</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-year">2018</span>
+            <p>George Carey Open / milestone year / verify details</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-year">2023</span>
+            <p>Pa George celebrated by community / verify details</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-year">2024</span>
+            <p>Community support year / verify details</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-year">2025</span>
+            <p>Milestone tournament year / verify details</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-year">2026</span>
+            <p>Current or upcoming tournament details / verify details</p>
+          </article>
         </div>
       </div>
     </section>
@@ -100,24 +195,57 @@
         <p class="eyebrow">Event Info</p>
         <h2 id="event-title">Annual Pa George Memorial 9-Ball Tournament</h2>
       </div>
-      <article class="event-poster panel" id="event-copy-source">
-        <p class="event-lead">Current event details should be confirmed by the family before publication.</p>
-        <dl class="event-details">
-          <div><dt>Date</dt><dd>[Add Date]</dd></div>
-          <div><dt>Time</dt><dd>[Add Time]</dd></div>
-          <div><dt>Location</dt><dd>[Add Venue]</dd></div>
-          <div><dt>Registration</dt><dd>[Add Details]</dd></div>
-          <div><dt>Entry Fee</dt><dd>[Add Details]</dd></div>
-          <div><dt>Contact</dt><dd>[Add Family-Approved Contact]</dd></div>
-          <div><dt>Approved Support Note</dt><dd>[Add approved support note]</dd></div>
-          <div><dt>Silent Auction</dt><dd>[Yes/No + Details]</dd></div>
-          <div><dt>Sponsors</dt><dd>[Add Sponsors]</dd></div>
-        </dl>
+
+      <article class="event-poster panel">
+        <div class="event-copy" id="event-copy-source">
+          <p class="event-lead">Current event details should be confirmed by the family before publication.</p>
+          <dl class="event-details">
+            <div>
+              <dt>Date</dt>
+              <dd>[Add Date]</dd>
+            </div>
+            <div>
+              <dt>Time</dt>
+              <dd>[Add Time]</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>[Add Venue]</dd>
+            </div>
+            <div>
+              <dt>Registration</dt>
+              <dd>[Add Details]</dd>
+            </div>
+            <div>
+              <dt>Entry Fee</dt>
+              <dd>[Add Details]</dd>
+            </div>
+            <div>
+              <dt>Contact</dt>
+              <dd>[Add Family-Approved Contact]</dd>
+            </div>
+            <div>
+              <dt>Approved Support Note</dt>
+              <dd>[Add approved support note]</dd>
+            </div>
+            <div>
+              <dt>Silent Auction</dt>
+              <dd>[Yes/No + Details]</dd>
+            </div>
+            <div>
+              <dt>Sponsors</dt>
+              <dd>[Add Sponsors]</dd>
+            </div>
+          </dl>
+        </div>
+
         <div class="event-actions screen-only">
           <button class="button button-primary" type="button" data-copy-event-details>Copy Event Details</button>
           <button class="button button-secondary" type="button" data-print-poster>Print Event Poster</button>
           <button class="button button-secondary" type="button" data-coming-soon>Add to Calendar - Coming Soon</button>
         </div>
+
+        <p class="event-note">Want to play, sponsor, contribute an auction item, or help out? Contact the family or event organizer below.</p>
       </article>
     </section>
 
@@ -126,12 +254,57 @@
         <p class="eyebrow">Sponsors</p>
         <h2 id="sponsors-title">Sponsor recognition belongs here only after permission is confirmed</h2>
       </div>
-      <div class="panel"><p>Pa's Place recognizes the people and businesses who help keep this community tradition alive.</p></div>
-      <div class="feature-grid">
-        <article class="info-card"><h3>Gold Sponsors</h3><p>Sponsor Name Coming Soon</p></article>
-        <article class="info-card"><h3>Silver Sponsors</h3><p>Sponsor Name Coming Soon</p></article>
-        <article class="info-card"><h3>Community Supporters</h3><p>Community Supporter Coming Soon</p></article>
-        <article class="info-card"><h3>Silent Auction Donors</h3><p>Silent Auction Donor Coming Soon</p></article>
+
+      <div class="panel">
+        <p>Pa’s Place recognizes the people and businesses who help keep this community tradition alive.</p>
+      </div>
+
+      <div class="sponsor-groups">
+        <article class="sponsor-group reveal">
+          <h3>Gold Sponsors</h3>
+          <div class="placeholder-grid">
+            <div class="placeholder-card">Sponsor Name Coming Soon</div>
+            <div class="placeholder-card">Sponsor Name Coming Soon</div>
+          </div>
+        </article>
+        <article class="sponsor-group reveal">
+          <h3>Silver Sponsors</h3>
+          <div class="placeholder-grid">
+            <div class="placeholder-card">Sponsor Name Coming Soon</div>
+            <div class="placeholder-card">Sponsor Name Coming Soon</div>
+          </div>
+        </article>
+        <article class="sponsor-group reveal">
+          <h3>Community Supporters</h3>
+          <div class="placeholder-grid">
+            <div class="placeholder-card">Community Supporter Coming Soon</div>
+            <div class="placeholder-card">Community Supporter Coming Soon</div>
+          </div>
+        </article>
+        <article class="sponsor-group reveal">
+          <h3>Silent Auction Donors</h3>
+          <div class="placeholder-grid">
+            <div class="placeholder-card">Silent Auction Donor Coming Soon</div>
+            <div class="placeholder-card">Silent Auction Donor Coming Soon</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="panel callout">
+        <p>If you would like to sponsor, please use the contact section below once a family-approved email is added.</p>
+        <a class="button button-primary" href="#contact">Sponsor Inquiry</a>
+      </div>
+    </section>
+
+    <section class="section reveal" id="giving-back" aria-labelledby="giving-back-title">
+      <div class="section-heading">
+        <p class="eyebrow">Community Support</p>
+        <h2 id="giving-back-title">Support details stay careful, verified, and family-approved</h2>
+      </div>
+
+      <div class="panel">
+        <p>“Community support has always been part of the spirit of Pa’s Place. Verified tournament notes, sponsor thanks, and any approved support details will be listed here once the family confirms them.”</p>
+        <p class="strong-note">Only approved event support details will be published here.</p>
       </div>
     </section>
 
@@ -140,11 +313,30 @@
         <p class="eyebrow">Memory Wall</p>
         <h2 id="memory-title">A warm place for family-approved stories</h2>
       </div>
+
+      <p class="section-intro">Stories shown here should be family-approved before publishing.</p>
+
       <div class="memory-wall">
-        <article class="memory-card"><h3>A Lesson From Pa</h3><p>[Short placeholder memory about something Pa taught or modeled.]</p><footer>— [Family Member Name]</footer></article>
-        <article class="memory-card"><h3>A Pool Hall Memory</h3><p>[Short placeholder memory from a night at the table, a match, or a laugh with friends.]</p><footer>— [Family Member Name]</footer></article>
-        <article class="memory-card"><h3>A Family Gathering</h3><p>[Short placeholder memory about a family meal, holiday, or gathering.]</p><footer>— [Family Member Name]</footer></article>
-        <article class="memory-card"><h3>A Moment We'll Never Forget</h3><p>[Short placeholder memory that feels personal, respectful, and true.]</p><footer>— [Family Member Name]</footer></article>
+        <article class="memory-card reveal">
+          <h3>A Lesson From Pa</h3>
+          <p>[Short placeholder memory about something Pa taught or modeled.]</p>
+          <footer>— [Family Member Name]</footer>
+        </article>
+        <article class="memory-card reveal">
+          <h3>A Pool Hall Memory</h3>
+          <p>[Short placeholder memory from a night at the table, a match, or a laugh with friends.]</p>
+          <footer>— [Family Member Name]</footer>
+        </article>
+        <article class="memory-card reveal">
+          <h3>A Family Gathering</h3>
+          <p>[Short placeholder memory about a family meal, holiday, or gathering.]</p>
+          <footer>— [Family Member Name]</footer>
+        </article>
+        <article class="memory-card reveal">
+          <h3>A Moment We’ll Never Forget</h3>
+          <p>[Short placeholder memory that feels personal, respectful, and true.]</p>
+          <footer>— [Family Member Name]</footer>
+        </article>
       </div>
     </section>
 
@@ -153,13 +345,73 @@
         <p class="eyebrow">Photo Gallery</p>
         <h2 id="gallery-title">Placeholder images are supported, so the site still feels complete</h2>
       </div>
+
       <div class="gallery-grid">
-        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Pa George" data-gallery-caption="Pa George" data-gallery-src="assets/images/pa-george-1.jpg" data-gallery-alt="Family photo placeholder for Pa George"><span class="gallery-media"><img src="assets/images/pa-george-1.jpg" alt="Family photo placeholder for Pa George" loading="lazy"><span class="gallery-placeholder" aria-hidden="true"><span class="gallery-placeholder__ball">9</span><span>Photo coming soon</span></span></span><span class="gallery-meta">Pa George</span></button>
-        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Tournament" data-gallery-caption="Tournament" data-gallery-src="assets/images/tournament-1.jpg" data-gallery-alt="Tournament photo placeholder"><span class="gallery-media"><img src="assets/images/tournament-1.jpg" alt="Tournament photo placeholder" loading="lazy"><span class="gallery-placeholder" aria-hidden="true"><span class="gallery-placeholder__ball">Rack</span><span>Photo coming soon</span></span></span><span class="gallery-meta">Tournament</span></button>
-        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Family" data-gallery-caption="Family" data-gallery-src="assets/images/family-1.jpg" data-gallery-alt="Family photo placeholder"><span class="gallery-media"><img src="assets/images/family-1.jpg" alt="Family photo placeholder" loading="lazy"><span class="gallery-placeholder" aria-hidden="true"><span class="gallery-placeholder__ball">Home</span><span>Photo coming soon</span></span></span><span class="gallery-meta">Family</span></button>
-        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Players" data-gallery-caption="Players" data-gallery-src="assets/images/players-1.jpg" data-gallery-alt="Players photo placeholder"><span class="gallery-media"><img src="assets/images/players-1.jpg" alt="Players photo placeholder" loading="lazy"><span class="gallery-placeholder" aria-hidden="true"><span class="gallery-placeholder__ball">Cue</span><span>Photo coming soon</span></span></span><span class="gallery-meta">Players</span></button>
-        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Sponsors" data-gallery-caption="Sponsors" data-gallery-src="assets/images/sponsors-1.jpg" data-gallery-alt="Sponsors photo placeholder"><span class="gallery-media"><img src="assets/images/sponsors-1.jpg" alt="Sponsors photo placeholder" loading="lazy"><span class="gallery-placeholder" aria-hidden="true"><span class="gallery-placeholder__ball">Thanks</span><span>Photo coming soon</span></span></span><span class="gallery-meta">Sponsors</span></button>
-        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Community" data-gallery-caption="Community" data-gallery-src="assets/images/community-1.jpg" data-gallery-alt="Community photo placeholder"><span class="gallery-media"><img src="assets/images/community-1.jpg" alt="Community photo placeholder" loading="lazy"><span class="gallery-placeholder" aria-hidden="true"><span class="gallery-placeholder__ball">Carey</span><span>Photo coming soon</span></span></span><span class="gallery-meta">Community</span></button>
+        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Pa George" data-gallery-caption="Pa George" data-gallery-src="assets/images/pa-george-1.jpg" data-gallery-alt="Family photo placeholder for Pa George">
+          <span class="gallery-media">
+            <img src="assets/images/pa-george-1.jpg" alt="Family photo placeholder for Pa George" loading="lazy">
+            <span class="gallery-placeholder" aria-hidden="true">
+              <span class="gallery-placeholder__ball">9</span>
+              <span>Photo coming soon</span>
+            </span>
+          </span>
+          <span class="gallery-meta">Pa George</span>
+        </button>
+
+        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Tournament" data-gallery-caption="Tournament" data-gallery-src="assets/images/tournament-1.jpg" data-gallery-alt="Tournament photo placeholder">
+          <span class="gallery-media">
+            <img src="assets/images/tournament-1.jpg" alt="Tournament photo placeholder" loading="lazy">
+            <span class="gallery-placeholder" aria-hidden="true">
+              <span class="gallery-placeholder__ball">Rack</span>
+              <span>Photo coming soon</span>
+            </span>
+          </span>
+          <span class="gallery-meta">Tournament</span>
+        </button>
+
+        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Family" data-gallery-caption="Family" data-gallery-src="assets/images/family-1.jpg" data-gallery-alt="Family photo placeholder">
+          <span class="gallery-media">
+            <img src="assets/images/family-1.jpg" alt="Family photo placeholder" loading="lazy">
+            <span class="gallery-placeholder" aria-hidden="true">
+              <span class="gallery-placeholder__ball">Home</span>
+              <span>Photo coming soon</span>
+            </span>
+          </span>
+          <span class="gallery-meta">Family</span>
+        </button>
+
+        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Players" data-gallery-caption="Players" data-gallery-src="assets/images/players-1.jpg" data-gallery-alt="Players photo placeholder">
+          <span class="gallery-media">
+            <img src="assets/images/players-1.jpg" alt="Players photo placeholder" loading="lazy">
+            <span class="gallery-placeholder" aria-hidden="true">
+              <span class="gallery-placeholder__ball">Cue</span>
+              <span>Photo coming soon</span>
+            </span>
+          </span>
+          <span class="gallery-meta">Players</span>
+        </button>
+
+        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Sponsors" data-gallery-caption="Sponsors" data-gallery-src="assets/images/sponsors-1.jpg" data-gallery-alt="Sponsors photo placeholder">
+          <span class="gallery-media">
+            <img src="assets/images/sponsors-1.jpg" alt="Sponsors photo placeholder" loading="lazy">
+            <span class="gallery-placeholder" aria-hidden="true">
+              <span class="gallery-placeholder__ball">Thanks</span>
+              <span>Photo coming soon</span>
+            </span>
+          </span>
+          <span class="gallery-meta">Sponsors</span>
+        </button>
+
+        <button class="gallery-card reveal" type="button" data-gallery-item data-gallery-title="Community" data-gallery-caption="Community" data-gallery-src="assets/images/community-1.jpg" data-gallery-alt="Community photo placeholder">
+          <span class="gallery-media">
+            <img src="assets/images/community-1.jpg" alt="Community photo placeholder" loading="lazy">
+            <span class="gallery-placeholder" aria-hidden="true">
+              <span class="gallery-placeholder__ball">Carey</span>
+              <span>Photo coming soon</span>
+            </span>
+          </span>
+          <span class="gallery-meta">Community</span>
+        </button>
       </div>
     </section>
 
@@ -168,6 +420,7 @@
         <p class="eyebrow">Contact</p>
         <h2 id="contact-title">Use mailto only when the family has approved the address</h2>
       </div>
+
       <div class="contact-grid">
         <article class="panel contact-card">
           <h3>Contact Reasons</h3>
@@ -178,12 +431,16 @@
             <li>Family archive/photo submissions</li>
             <li>Corrections to website information</li>
           </ul>
+          <p class="strong-note">Please do not send private family information unless you have permission from those involved.</p>
         </article>
+
         <article class="panel contact-card">
           <h3>Family-Approved Email</h3>
           <p class="email-placeholder">[ADD_FAMILY_APPROVED_EMAIL_HERE]</p>
           <p>This contact area intentionally avoids a form. Add a verified email address before publishing any mailto link.</p>
-          <div class="contact-actions"><span class="button button-primary button-disabled" aria-disabled="true">Contact Email Coming Soon</span></div>
+          <div class="contact-actions">
+            <span class="button button-primary button-disabled" aria-disabled="true">Contact Email Coming Soon</span>
+          </div>
         </article>
       </div>
     </section>
@@ -192,7 +449,7 @@
   <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>Top</button>
 
   <footer class="site-footer">
-    <p>Pa's Place — Honouring George Alexander Carey, Pa George.</p>
+    <p>Pa’s Place — Honouring George Alexander Carey, Pa George.</p>
     <p>Built with love by family, for family, friends, players, and community.</p>
     <nav class="footer-nav" aria-label="Footer">
       <a href="#home">Home</a>
@@ -209,7 +466,10 @@
       <button class="gallery-modal__close" type="button" data-gallery-close aria-label="Close gallery preview">Close</button>
       <div class="gallery-modal__media">
         <img class="gallery-modal__image" alt="">
-        <div class="gallery-modal__placeholder" aria-hidden="true"><span class="gallery-placeholder__ball">9</span><span>Photo coming soon</span></div>
+        <div class="gallery-modal__placeholder" aria-hidden="true">
+          <span class="gallery-placeholder__ball">9</span>
+          <span>Photo coming soon</span>
+        </div>
       </div>
       <div class="gallery-modal__copy">
         <h3 id="gallery-modal-title"></h3>

@@ -2,7 +2,7 @@
 
 This site should never be published with private or unverified information.
 
-## Never publish without permission
+## Never Publish Without Permission
 
 - private phone numbers
 - private addresses
@@ -21,14 +21,46 @@ This site should never be published with private or unverified information.
 - unapproved contact details
 - unapproved forms or public support links
 
-## Pre-publishing checklist
+## Family Approval Checklist
 
 - The wording is true and respectful
 - The family has reviewed the content
 - The content only includes approved names
 - The content only includes approved stories
 - The content does not reveal private information
-- Photo permissions are clear
-- Sponsor names are approved
-- Event details are confirmed
-- The tone feels respectful and warm
+
+## Photo Consent Checklist
+
+- The photo owner approved publication
+- Everyone in the photo is allowed to be shown
+- The caption is accurate
+- The image is not copyrighted by someone else without permission
+
+## Sponsor Approval Checklist
+
+- The sponsor name is confirmed
+- The sponsor wants to be listed
+- The display name is approved
+- Any logo is approved for use
+- The sponsor claim is accurate
+
+## Tournament Fact Verification Checklist
+
+- Date is confirmed
+- Time is confirmed
+- Location is confirmed
+- Registration is confirmed
+- Contact details are confirmed
+- Event support details are confirmed
+- Silent auction details are confirmed
+
+## Pre-Publishing Safety Review
+
+- Remove placeholders that are no longer needed
+- Check every link
+- Check every photo caption
+- Check every sponsor name
+- Check the print version
+- Review the site on mobile
+- Confirm the contact section only uses approved information
+- Make sure the tone stays family-first and respectful
